@@ -1,0 +1,57 @@
+{
+    "name": "microbit-pxt-blehid - Copy",
+    "version": "0.1.0",
+    "description": "BLE HID Support",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "bluetooth": "*"
+    },
+    "files": [
+        "README.md",
+        "HIDService.cpp",
+        "HIDService.h",
+        "HIDReporter.cpp",
+        "HIDReporter.h",
+        "debug.h",
+        "shims.d.ts",
+        "enums.d.ts",
+        "media.ts",
+        "media.cpp",
+        "MediaReporter.cpp",
+        "MediaReporter.h"
+    ],
+
+    "public": true,
+    "targetVersions": {
+        "target": "6.0.26",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj",
+    "disablesVariants": [
+        "mbdal"
+    ],
+    "authors": [
+        "Bill Siever <bsiever@gmail.com>"
+    ],
+    "card": {
+        "name": "Bluetooth Human Interfaces",
+        "imageUrl": "file:../icon.png",
+        "feedbackUrl": "https://github.com/bsiever/microbit-pxt-blehid/discussions/16"
+    },
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 0,
+                    "whitelist": 1,
+                    "security_level": "SECURITY_MODE_ENCRYPTION_NO_MITM",
+                    "device_info_service": 0
+                }
+            }
+        }
+    }
+}
